@@ -1,0 +1,90 @@
+
+    <!-- header -->
+    <section class="header">
+        <div class="header-background">
+            <div class="hotel-name">
+                <h1>Cappadocia</h1>
+                <h3>Red Sands Hotel</h3>
+                <a href="/#reservation" ><button class="btn">MAKE AN ORDER</button></a>
+            </div>
+        </div>
+    </section>
+    
+     <!----------------About---------------->
+     <section class="about-area">
+        <div class="about">
+            <h1>About</h1>
+            <p>IT ALL STARTED WITH THREE QUESTIONS:</p>
+    
+            <p>What do travellers eat?<br>What do travellers drink?<br>Where do travellers stretch & take a breather?
+            </p>
+    
+            <p class="cen-align">Situated along the Nairobi-Mombasa highway, 8 min from Sultan-Hamud,<br> Cappadocia Red Sands Hotel & Bar is the go to place for every traveller who wants good food<br>and a great ambience as they break their journey.<br>The hotel is the brigde between fatigue/hunger and refreshment.
+            </p>
+    
+        </div>
+     </section>
+    
+        <!----------------menu-------------------> 
+    <section class="menu-container">
+        <a href="/menu"><div class="menu-section">
+            <h1>MENU</h1>
+        </div></a>
+        <div class="menu-section-image">
+            <img src="images/chicken-dish.jpg" alt="">
+        </div>
+    </section>
+    
+    <!---------reservation---------->
+    
+    <section class="location">
+         <div id="reservation">
+            <div class="res-container">
+            <h1>Reservation</h1>
+            <p>We like orders waiting for our customers;<br>rather than our customers waiting for their orders.</p>
+            <h2>Make an Order Now</h2>
+            </div>  
+          <!-----------form----------->
+        
+          <div class="form">
+            <form action="/#reservation" method="POST" class="order" id="form">
+                <div>
+                    <input type="textarea" placeholder="Check Menu & Type Your Order" class="order" name="order" required = true>
+                 </div>
+                
+                <div>
+                <input type="text" onfocus="(this.type='date')" placeholder="Date" class="date" name="date" required = true>
+                </div>
+    
+                <div>      
+                <input type="number" min="1" placeholder="No of People" class="people" name="people" required = true>
+                </div>
+       
+                <div>
+                 <input type="text" onfocus="(this.type='time')" placeholder="Arrival Time" class="time" name="time" required = true>
+                </div>
+    
+                <div>
+                    <input type="tel" class="tel" placeholder="Your Number" name="telephone" pattern="[0-9]{10}" required = true> 
+                    </div>
+    
+                <div>
+                <button type="submit" class="submit-form">Submit Order</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    
+        <!--------------map-------------> 
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15949.902198953903!2d37.3155736!3d-1.9635737!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183aaab7f4ccc861%3A0x8054549cefb8f41!2sCappadocia%20Redsand&#39;s%20Hotel!5e0!3m2!1sen!2ske!4v1640171640760!5m2!1sen!2ske" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>   
+    </section>
+    
+    
+    
+    
+    
+        
+        <!-- --------JavaScript--------- -->
+       

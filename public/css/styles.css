@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* -------Nav---------- */
+  .nav {
+    width: 100%;
+    background-color: #264653;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo a {
+    font-family: "Kings", cursive;
+    text-decoration: none;
+    color: #fff3d1;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  .navlinks ul {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1;
+  }
+  .navlinks li {
+    list-style: none;
+    padding: 0 30px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  .navlinks li a {
+    text-decoration: none;
+    color: #fff3d1;
+  }
+  .navlinks li a:hover {
+    border-bottom: 2px solid #fff3d1;
+    margin-top: 2px;
+    transition: all 0.1s ease-in-out 0.1s;
+  }
+  .fa-bars {
+    font-size: 2em;
+    color: #fff3d1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    margin-top: 17px;
+    cursor: pointer;
+  }
+  /* -------End of Nav---------- */
+  
+  /* -----header----- */
+  .header {
+    width: 100%;
+    min-height: 80vh;
+    background-color: #264653;
+  }
+  .header-background {
+    height: 75vh;
+    background-image: linear-gradient(
+        rgba(145, 92, 39, 0.5),
+        rgba(113, 50, 0, 0.35)
+      ),
+      url(/images/chicken-dish3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .hotel-name {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+  }
+  .hotel-name h1 {
+    font-size: 64px;
+    margin-bottom: 0;
+  }
+  .hotel-name h3 {
+    font-size: 44px;
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9d8a6;
+    border: none;
+    color: #78290f;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+  }
+  
+  /* --------Responsiveness--------- */
+  /*----- navbar -----*/
+  @media (max-width: 909px) {
+    .nav {
+      padding: 10px;
+    }
+    .navlinks li {
+      padding: 0 10px 0;
+    }
+    .navlinks li {
+      padding: 6px 0;
+    }
+    .navlinks li a {
+      text-align: center;
+    }
+    .navlinks {
+      width: 100%;
+      display: none;
+    }
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .navlinks ul {
+      flex-direction: column;
+    }
+    .navlinks.active {
+      display: flex;
+      padding-left: 30px;
+    }
+    .navbar.active {
+      align-items: center;
+    }
+    .fa-bars {
+      font-size: 1.9em;
+      margin-top: 17px;
+    }
+    .logo a {
+      font-size: 1.7em;
+    }
+  }
+  
+  @media (max-width: 598px) {
+    /* -----header Details----- */
+    .hotel-name h1 {
+      font-size: 46px;
+    }
+    .hotel-name h3 {
+      font-size: 32px;
+    }
+  }
+  /* --------end of media query--------- */
+  
+  /* ---------------About------------ */
+  .about-area {
+    width: 100%;
+    padding: 30px;
+    background-color: #dfe7fd;
+  }
+  .about h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+  }
+  .about p {
+    margin-top: 1em;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 598px) {
+    .about h1 {
+      font-size: 30px;
+    }
+    .about p {
+      font-size: 0.85rem;
+    }
+  }
+  /* ---about-- */
+  
+  /* ---------------menu section------------------- */
+  .menu-container {
+    max-width: 100%;
+    padding: 5em;
+    background-color: #e6ccb2;
+    display: block;
+  }
+  .menu-section-image {
+    width: 100%;
+  }
+  .menu-section-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  .menu-section {
+    width: 100%;
+    background-color: #683f1b;
+    margin-bottom: 1em;
+  }
+  .menu-container a {
+    text-decoration: none;
+  }
+  .menu-container a:hover {
+    transform: scale(1);
+  }
+  .menu-section h1 {
+    text-align: center;
+    padding: 30px 0;
+    color: #fff3d1;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+  }
+  .food-menu {
+    display: block;
+    padding: 0 70px;
+  }
+  .food-menu .text {
+    color: #683f1b;
+  }
+  .foodtype_price {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+  }
+  .foodtype {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .price {
+    color: #ee9b00;
+    font-size: 18px;
+  }
+  .Breakfast h3 {
+    margin-bottom: 1em;
+  }
+  .h3 {
+    margin-top: 1em;
+  }
+  .menupage {
+    background-color: #e6ccb2;
+  }
+  .menuheaders {
+    text-align: center;
+    padding: 1.5em 0;
+  }
+  .menuheaders h2 {
+    margin-bottom: 8px;
+    font-size: 32px;
+    color: #683f1b;
+  }
+  .menuheaders h4 {
+    font-style: italic;
+    color: #683f1b;
+  }
+  .h4 {
+    text-align: center;
+    font-style: italic;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  
+  @media (max-width: 598px) {
+    .menu-section h1 {
+      padding: 20px 0;
+    }
+    .menu-container {
+      padding: 0em;
+    }
+    .food-menu {
+      padding: 0 30px;
+    }
+    .menuheaders h2 {
+      font-size: 22px;
+    }
+  }
+  /* ----------reservation--------- */
+  #reservation {
+    background-color: #dfe7fd;
+  }
+  #reservation h1 {
+    padding: 30px 0 10px 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+  }
+  #reservation p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  #reservation h2 {
+    text-align: center;
+  }
+  .res-container {
+    padding: 0 3rem;
+  }
+  @media (max-width: 598px) {
+    #reservation h1 {
+      font-size: 30px;
+    }
+    #reservation p {
+      font-size: 0.85rem;
+    }
+  }
+  /* --------Form--------- */
+  .form {
+    text-align: center;
+    width: 300px;
+    padding: 1em 0 2em 0;
+    margin: auto;
+  }
+  form {
+    text-align: center;
+  }
+  input {
+    width: 100%;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: none;
+    border-width: 1px;
+  }
+  .form button {
+    width: 100%;
+    padding: 20px;
+    background-color: #683f1b;
+    color: #fff3d1;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  @media (max-width: 598px) {
+    .form {
+      width: 260px;
+    }
+  }
+  /* -------------Map------------ */
+  .location {
+    max-width: 100%;
+  }
+  .map {
+    width: 100%;
+    background-image: url(/images/bg2.jpg);
+    text-align: center;
+    padding: 2em 0;
+  }
+  @media (max-width: 598px) {
+    iframe {
+      width: 270px;
+    }
+  }
+  /* -----------Contacts----------- */
+  .contacts {
+    max-width: 100%;
+    background-color: #264653;
+    color: #fff3d1;
+    text-align: center;
+  }
+  .contacts h1 {
+    padding: 40px 0 20px 0;
+  }
+  .open-details {
+    margin-bottom: 20px;
+  }
+  .phone {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  .contacts .btn {
+    margin: 30px 0 60px 0;
+    cursor: pointer;
+  }
+  .footer {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+  
